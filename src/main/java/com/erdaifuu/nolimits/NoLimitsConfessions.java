@@ -23,7 +23,7 @@ public class NoLimitsConfessions {
     public NoLimitsConfessions() throws LoginException, InterruptedException, SQLException {
         SQLiteDataSource.getConnection();
 
-        final String TOKEN = "MTA5NTU0MDcwNzU1NDUwMDY2MA.GIun8Z.cvSMSnae1AMYwVvzCHbo_cGX8Wt7xwui-YticE";
+        final String TOKEN = "";
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(TOKEN);
 
         builder.setStatus(OnlineStatus.ONLINE);
