@@ -55,7 +55,7 @@ public class CommandManager extends ListenerAdapter {
             String confession = confessionOption.getAsString();
 
             // Send the confessions to the logs channel
-            TextChannel txtChannel = logGuild.getTextChannelById("1095825771949465624");
+            TextChannel txtChannel = logGuild.getTextChannelById("");
             String userTag = event.getUser().getAsTag();
             String serverTag = event.getGuild().getName();
             String serverChannel = event.getGuildChannel().getName();
@@ -69,9 +69,6 @@ public class CommandManager extends ListenerAdapter {
 
             assert txtChannel != null;
             txtChannel.sendMessageEmbeds(logEmbed.build()).queue();
-
-            /* Member member = event.getGuild().getMemberByTag("child#8665");
-            User user = member.getUser();*/
 
             // Build the embeds for the message itself
             EmbedBuilder confessionEmbed = new EmbedBuilder();

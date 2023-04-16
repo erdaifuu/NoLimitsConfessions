@@ -43,7 +43,7 @@ public class NoLimitsConfessions {
     }
 
     public JDA getJDA() {
-        final String TOKEN = "MTA5NTU0MDcwNzU1NDUwMDY2MA.GIun8Z.cvSMSnae1AMYwVvzCHbo_cGX8Wt7xwui-YticE";
+        final String TOKEN = "";
         JDABuilder jdaBuilder = JDABuilder.createDefault(TOKEN);
         JDA jda = jdaBuilder.build();
         return jda;
